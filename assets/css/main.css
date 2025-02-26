@@ -90,58 +90,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -915,7 +863,12 @@ section,
 }
 
 .about .about-image img {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 25px var(--snd-bg-color);
+}
+
+.about .about-image img:hover {
+  box-shadow: 0 0 25px var(--snd-bg-color), 0 0 35px var(--snd-bg-color),
+    0 0 45px var(--snd-bg-color);
 }
 
 .about .about-content {
@@ -1211,51 +1164,6 @@ section,
 
 .contact .contact-info .map-link:hover i {
   transform: translateX(5px);
-}
-
-.contact .contact-form {
-  background-color: var(--surface-color);
-  border: none;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-}
-
-.contact .contact-form .form-control,
-.contact .contact-form .form-select {
-  padding: 0.75rem 1.25rem;
-  border-color: #e5e5e5;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.contact .contact-form .form-control:focus,
-.contact .contact-form .form-select:focus {
-  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  box-shadow: 0 0 0 0.25rem
-    color-mix(in srgb, var(--accent-color), transparent 90%);
-}
-
-.contact .contact-form .form-control::placeholder,
-.contact .contact-form .form-select::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-}
-
-.contact .contact-form .btn-submit {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 0.75rem 2rem;
-  font-weight: 500;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.contact .contact-form .btn-submit:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-  transform: translateY(-1px);
-}
-
-.contact .contact-form .btn-submit:active {
-  transform: translateY(0);
 }
 
 /*--------------------------------------------------------------

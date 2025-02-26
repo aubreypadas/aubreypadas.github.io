@@ -244,18 +244,3 @@
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
-
-function showSuccessAlert(event) {
-  event.preventDefault(); // Prevent actual form submission
-
-  // Show the Bootstrap alert message
-  document.getElementById("success-alert").classList.remove("d-none");
-
-  // Clear the form fields
-  document.querySelector(".email-form").reset();
-
-  // Hide the alert after 3 seconds
-  setTimeout(() => {
-    document.getElementById("success-alert").classList.add("d-none");
-  }, 3000);
-}
