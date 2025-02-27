@@ -1127,6 +1127,7 @@ section,
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  align-items: center;
 }
 
 .contact .content h2 {
@@ -1145,25 +1146,6 @@ section,
 .contact .contact-info .info-item i {
   color: var(--accent-color);
   font-size: 1.4rem;
-}
-
-.contact .contact-info .map-link {
-  color: var(--heading-color);
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.contact .contact-info .map-link i {
-  transition: transform 0.3s ease;
-}
-
-.contact .contact-info .map-link:hover {
-  color: var(--accent-color);
-}
-
-.contact .contact-info .map-link:hover i {
-  transform: translateX(5px);
 }
 
 /*--------------------------------------------------------------
